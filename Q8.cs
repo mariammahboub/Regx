@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-public class Q8
+namespace RegexTask{
+class Q8
 {
     static void Main()
     {
@@ -15,4 +16,5 @@ public class Q8
             Console.WriteLine($"{text} -> {updatedText}");
         }
     }
+}
 }

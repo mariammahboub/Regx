@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
-namespace Q2
+public class Q2
 {
-    internal class Program
-    {
         static void Main(string[] args)
         {
             string[] testCases = {
@@ -25,4 +23,3 @@ namespace Q2
                                     .Average(), 2);
         }
     }
-}

@@ -8,7 +8,7 @@ class Q7
             string[] testCases = {"$10.99","10#","av10","100","103"};
             foreach (string testCase in testCases)
             {
-                bool isValidCurrency = Regex.IsMatch(testCase, @"^([A-Z]{3}\s*)?(-?\$|€|£)?\d{1,3}(,\d{3})*(\.\d{2})?$");
+                bool isValidCurrency = Regex.IsMatch(testCase, @"^\p{Sc}?\d+(,\d{3})*(\.\d{2})?$");
                 Console.WriteLine($"{testCase} -> {isValidCurrency}");
             }
         }

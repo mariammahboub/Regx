@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-public class Q1
+namespace RegexTask{
+class Q1
 {
         static void Main(string[] args)
         {
@@ -15,4 +16,5 @@ public class Q1
         {
             return Regex.IsMatch(hexCode, @"[#][0-9A-Fa-f]{6}\b");
         } 
+}
 }

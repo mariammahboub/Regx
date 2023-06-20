@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 namespace RegexTask{
-public class Q2
+class Q2
 {
         static void Main(string[] args)
         {

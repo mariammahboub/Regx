@@ -2,7 +2,8 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-public class Q4{
+namespace RegexTask{
+class Q4{
         static void Main(string[] args)
         {
             string[] testCases = { "Suuu$21g@", "W#1g@", "a&&g@", "sdsd723#$Amid", "sdsd723#$Amidkiouy" };
@@ -17,5 +18,4 @@ public class Q4{
             Regex.IsMatch(text, @"[!-/:-@\[-_{-~]") &&
             !Regex.IsMatch(text, @"[^\dA-Za-z!-/:-@\[-_{-~]");
     }
-
 }

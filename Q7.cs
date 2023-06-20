@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-public class Q7
+namespace RegexTask{
+class Q7
 {
         static void Main()
         {
@@ -23,4 +24,5 @@ public class Q7
                 Console.WriteLine($"{testCase} -> {isValidCurrency}");
             }
         }
+}
 }

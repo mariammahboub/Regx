@@ -2,10 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-namespace Q4
-{
-    internal class Program
-    {
+public class Q4{
         static void Main(string[] args)
         {
             string[] testCases = { "Suuu$21g@", "W#1g@", "a&&g@", "sdsd723#$Amid", "sdsd723#$Amidkiouy" };

@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
-namespace Q3
-{
-    internal class Program
-    {
+public class Q3{
         static void Main(string[] args)
         {
             string[] testCases = { "amamd", "pamamd", "ferre" };
@@ -18,4 +15,4 @@ namespace Q3
             return Regex.Replace(string.Concat(text.OrderBy(x => x)), @"([a-z])\1{1}", "").Length <= 1;
         }
     }
-}
+

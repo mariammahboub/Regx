@@ -13,15 +13,14 @@ class Q2
         };
             foreach (string data in testCases)
             {
-                Console.WriteLine($"Text: {data}\nAverage Length: {CalculateAverageLength(data)}");
+                Console.WriteLine($"Text: {data}\nAverage Length: {AverageSentenceLenght(data)}");
             }
         }
-        public static double CalculateAverageLength(string data)
-        {
-            return Math.Round(Regex.Replace(data, "[^A-Za-z ]", "")
-                                    .Split(' ')
-                                    .Select(word => word.Length)
-                                    .Average(), 2);
-        }
+    static double AverageSentenceLenght(string input)
+    {
+        int lettersLenght = (Regex.Replace(input, @"[^A-Za-z]", "").Length);
+        int countWords = Regex.Split(input, @"\W+").Count(x => !string.IsNullOrWhiteSpace(x));
+        return Math.Round((double)lettersLenght / countWords, 2);
+    }
     }
 }

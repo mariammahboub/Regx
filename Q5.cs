@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-public class Q5{
+namespace RegexTask{
+class Q5{
         static void Main()
         {
             Console.WriteLine("Sample Data:");
@@ -19,3 +20,4 @@ public class Q5{
             return pattern.Length.ToString();
         }
     }
+}

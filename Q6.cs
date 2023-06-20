@@ -19,7 +19,3 @@ public class Q6
             return count;
         }
     }
-}
-
-	}
-}

@@ -14,6 +14,7 @@ class Q6
         }
         public static int CountRepeatedWords(string input)
         {
+        //the pattern (\b\w+\b)(?=.*\b\1\b) looks for words in the string and checks if the same word appears again later in the string. This pattern effectively identifies repeated occurrences of words.
         Regex regex = new Regex(@"(\b\w+\b)(?=.*\b\1\b)");
         MatchCollection matches = regex.Matches(input);
         int count = matches.Count;

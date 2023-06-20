@@ -14,10 +14,10 @@ class Q6
         }
         public static int CountRepeatedWords(string input)
         {
-            Regex regex = new Regex(@"\b(\w+)\b(\s+\1\b)+", RegexOptions.IgnoreCase);
-            MatchCollection matches = regex.Matches(input);
-            int count = matches.Count;
-            return count;
+        Regex regex = new Regex(@"(\b\w+\b)(?=.*\b\1\b)");
+        MatchCollection matches = regex.Matches(input);
+        int count = matches.Count;
+        return count;
         }
     }
 }

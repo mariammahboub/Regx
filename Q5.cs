@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-namespace Q5
-{
-    internal class Program
-    {
+public class Q5{
         static void Main()
         {
             Console.WriteLine("Sample Data:");
@@ -22,4 +19,3 @@ namespace Q5
             return pattern.Length.ToString();
         }
     }
-}

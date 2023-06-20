@@ -5,8 +5,7 @@ class Q1
 {
         static void Main(string[] args)
         {
-            string[] hexCodes = {
-            "#CD5C5C", "#f08080","#E9967A","#EFFA07A"};
+            string[] hexCodes = {"#CD5C5C", "#f08080","#E9967A","#EFFA07A"};
             foreach (string hexCode in hexCodes)
             {
                 Console.WriteLine("Hex Code: " + hexCode + " -> " + CheckHex(hexCode));

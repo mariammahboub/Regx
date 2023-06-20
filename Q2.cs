@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
+namespace RegexTask{
 public class Q2
 {
         static void Main(string[] args)
@@ -23,3 +24,4 @@ public class Q2
                                     .Average(), 2);
         }
     }
+}

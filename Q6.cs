@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-public class Q6
+namespace RegexTask{
+class Q6
 {
         static void Main()
         {
@@ -19,3 +20,4 @@ public class Q6
             return count;
         }
     }
+}
